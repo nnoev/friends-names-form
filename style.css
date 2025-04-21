@@ -14,7 +14,8 @@ html {
     font: 14px/1.5 'Dancing Script', cursive;
 
 }
-body{
+
+body {
     height: 100dvh;
 }
 
@@ -37,6 +38,8 @@ body{
 
 p {
     text-align: center;
+    font-weight: 700;
+    font-size: 1.5em;
 }
 
 form {
@@ -48,8 +51,7 @@ form {
 input {
     width: 100%;
     border-radius: 0.4em;
-        height: 2em;
-
+    height: 2em;
 }
 
 button {
