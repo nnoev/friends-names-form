@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Form Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 
 <body>
-    <h1>Contact Form</h1>
-    <form action="https://httpbin.org/get" method="GET">
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name"><br><br>
+    <h1>Моля, попълни името си</h1>
+    <form action="https://formsubmit.co/n.p.noev@gmail.com" method="POST">
+        <label for="bulgarianName">Име на кирилица:</label><br>
+        <input type="text" id="bulgarianName" name="Име_на_кирилица" required><br><br>
 
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email"><br><br>
+        <label for="latinName">Име на латиница:</label><br>
+        <input type="text" id="latinName" name="Име_на_латиница" required><br><br>
 
-        <input type="submit" value="Send">
+        <!-- Prevent spam -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- Optional: Redirect after submit -->
+        <input type="hidden" name="_next" value="https://example.com/thank-you.html">
+
+        <button type="submit">Изпрати</button>
     </form>
 </body>
 
